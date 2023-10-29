@@ -3,7 +3,7 @@ const mongoURI = "mongodb+srv://gofood:gofood2001@cluster0.736b5l3.mongodb.net/g
 const mongoDB = async () => {
     await mongoose.connect(mongoURI, { useNewUrlParser: true }, async (err, result) => {
         if (err) {
-            console.log("---", err);
+            console.log("----", err);
 
         } else {
             console.log("DB connected");
